@@ -2,7 +2,7 @@ import discord
 import asyncio
 import csv
 from bot_extensions.extension_class import BotExtensionFunctions
-from bot_extensions.utils import BotUtilities
+from bot_extensions.discord_utils import BotUtilities
 
 #
 # Owlbot, a Discord bot by Owlbearpig and Inarius, based on discord.py and its command
@@ -10,12 +10,7 @@ from bot_extensions.utils import BotUtilities
 #
 #
 #
-#
-#
-#
-#
-#
-#
+
 
 client = discord.Client()
 token = 'NDE2NTY4NjQ2MTUyODgwMTI5.DXGXbw.vDjD6z_CFE-M7NbSiwZXVlvbfMc'
