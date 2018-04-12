@@ -103,8 +103,9 @@ class AltLookup():
         plt.text(0, 0, str(self.x), {'fontsize': 10}, fontproperties='monospace', color = 'white', backgroundcolor = 'black')
         plt.axis('off')
         plt.tight_layout()
-        plt.savefig(os.path.join(Path(__file__).parents[1],'output-{}.png'.format(self.disc_id)), bbox_inches = 'tight')
-        return os.path.join(Path(__file__).parents[1],'output-{}.png'.format(self.disc_id))
+        save_path = os.path.join(Path(__file__).parents[1], 'output', 'output-{}.png'.format(self.disc_id))
+        plt.savefig(save_path, bbox_inches = 'tight')
+        return save_path
 
 if __name__ == '__main__':
     _new = AltLookup()

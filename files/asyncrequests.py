@@ -2,6 +2,7 @@ import asyncio
 import aiohttp
 from aiohttp import ClientSession
 from files.aiohttp_ratelimit import RateLimiter
+from yarl import URL
 
 
 class ParallelRequests():
@@ -15,15 +16,16 @@ class ParallelRequests():
 
     async def fetch(self, url, session):
         retries = 10
+        print(URL(url, encoded=False))
         try:
-            response = await session.get(url)
+            response = await session.get(URL(url, encoded=False))
             for retry in range(retries):
                 if response.status != 200:
                     if response.status == 404:
                         print("    ",str(url.replace(" ", "%20")), response.status)
                         return
                     print("    ",str(url.replace(" ", "%20")), response.status, "Retrying:", retry, "/", retries)
-                    response = await session.get(url)
+                    response = await session.get(URL(url, encoded=False))
                 else:
                     return await response.read()
             print(url, "could not be fetched")
