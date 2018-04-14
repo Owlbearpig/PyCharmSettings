@@ -25,7 +25,7 @@ class Variables():
         self._disc_login_token = self.get_login_token()
 
     def get_login_token(self):
-        _login_info_path = os.path.join(Path(__file__).parents[0], "files", "login_info")
+        _login_info_path = os.path.join(Path(__file__).parents[0], "login_info")
         f = open(_login_info_path)
         return str(f.read())
 
