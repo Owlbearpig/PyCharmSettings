@@ -3,7 +3,7 @@ from files.variables import Variables
 import json
 
 new_vars = Variables()
-disc_id_dict = new_vars.disc_dict
+disc_id_dict = new_vars._disc_dict
 
 new_sql_transfer = sql_transfers.MysqlTransfer()
 

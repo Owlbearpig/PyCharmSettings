@@ -1,6 +1,7 @@
 import discord
 import asyncio
 import csv
+from files import variables
 from bot_extensions.extension_class import BotExtensionFunctions
 from bot_extensions.discord_utils import BotUtilities
 
@@ -11,10 +12,11 @@ from bot_extensions.discord_utils import BotUtilities
 #
 #
 
-
+vars = variables.Variables()
 client = discord.Client()
-token = 'NDE2NTY4NjQ2MTUyODgwMTI5.DXGXbw.vDjD6z_CFE-M7NbSiwZXVlvbfMc'
 loop = asyncio.get_event_loop()
+
+token = vars._disc_login_token
 
 async def print_channels():
     await client.wait_until_ready()
@@ -23,10 +25,9 @@ async def print_channels():
 
 async def send_msg():
     await client.wait_until_ready()
-    await client.send_message(discord.Object(id="407911597017661450"), content="#wave")
+    await client.send_message(discord.Object(id="410942179952033794"), content="#hello : )")
 
 @client.event
-#@asyncio.coroutine
 async def on_ready():
     await send_msg()
     print('Logged in. Reading chat')

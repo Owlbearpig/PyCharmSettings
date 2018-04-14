@@ -25,7 +25,7 @@ class AltLookup():
 
     def url_list_generator(self, char_list, field="mythic_plus_weekly_highest_level_runs"):
         url_list = []
-        base_url = self.new_variables.raider_io_base_url
+        base_url = self.new_variables._raider_io_base_url
         local_char_list = char_list
         if not type(local_char_list) == type([]): # weird fix ...
             local_char_list = []
