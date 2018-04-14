@@ -397,7 +397,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523716760857</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Discord login token moved to private : )">
+      <created>1523716814784</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1523716814784</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -484,7 +491,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="rename" />
     <MESSAGE value="output to separate folder.&#10;auto url decoding for raspbian compatibilityiii :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="output to separate folder.&#10;auto url decoding for raspbian compatibilityiii :)" />
+    <MESSAGE value="Discord login token moved to private : )" />
+    <option name="LAST_COMMIT_MESSAGE" value="Discord login token moved to private : )" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
