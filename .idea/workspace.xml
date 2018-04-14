@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1fc034c6-c72c-4dc7-a0d1-4daae771fcab" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/character_groups.py" afterPath="$PROJECT_DIR$/character_groups.py" />
-      <change beforePath="$PROJECT_DIR$/files/player_char_lookup.py" afterPath="$PROJECT_DIR$/files/player_char_lookup.py" />
-      <change beforePath="$PROJECT_DIR$/files/variables.py" afterPath="$PROJECT_DIR$/files/variables.py" />
-      <change beforePath="$PROJECT_DIR$/owl_bot.py" afterPath="$PROJECT_DIR$/owl_bot.py" />
-      <change beforePath="$PROJECT_DIR$/snippet_test.py" afterPath="$PROJECT_DIR$/snippet_test.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -395,7 +390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523541755773</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="output to separate folder.&#10;auto url decoding for raspbian compatibilityiii :)">
+      <created>1523716760857</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1523716760857</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
