@@ -1,12 +1,18 @@
 import pymysql
+from files import variables
 
 class MysqlTransfer():
 
     def __init__(self):
+        self.vars = variables.Variables()
 
-        self.connection = pymysql.connect(host='localhost',
-                             user='owl',
-                             password='1337turtle',
+        login = self.vars.get_mysql_login()
+        user = login[0]
+        pw = login[1]
+
+        self.connection = pymysql.connect(host='192.168.2.79',
+                             user=user,
+                             password=pw,
                              db='wow_tb_members',
                              charset='utf8mb4',
                              cursorclass=pymysql.cursors.DictCursor)

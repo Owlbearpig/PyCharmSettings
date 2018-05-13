@@ -50,8 +50,10 @@ class BotExtensionFunctions():
             wr.writerows(output_str)
         print("file generated")
 
+
     @asyncio.coroutine
-    async def altinator_main(self, disc_id = "105605803632762880"):
+    async def altinator_main(self, disc_id="105605803632762880"):
+
         lookup = player_char_lookup.AltLookup(disc_id=disc_id)
 
         db_all_chars_temp = lookup.db_all_chars

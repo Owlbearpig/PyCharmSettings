@@ -15,13 +15,8 @@ import os
 from pathlib import Path
 
 
+new_vars = variables.Variables()
 
+a = new_vars.get_mysql_login()
 
-
-
-
-
-
-
-
-
+print(a[0])

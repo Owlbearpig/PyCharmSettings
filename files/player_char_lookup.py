@@ -20,8 +20,16 @@ class AltLookup():
 
         self.db_dump_main = json.loads(mysql_transfer.db_get("member_links", "main_char", "disc_id={}".format(disc_id))['main_char'])
 
+        self.db_dump_disc_connections = json.loads(mysql_transfer.db_get("disc_connection", "name", "disc_id={}".format(disc_id))['main_char'])
+
         self.pic_dimensions = (0,0)
 
+    def id_check(self):
+        disc_id = self.disc_id
+
+
+
+        return
 
     def url_list_generator(self, char_list, field="mythic_plus_weekly_highest_level_runs"):
         url_list = []
