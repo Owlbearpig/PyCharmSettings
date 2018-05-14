@@ -9,7 +9,14 @@ class BotUtilities():
         return message.author.id
 
     async def format_msg(self, message):
-        dirt = ["%%add", " ", ":", "!"]
+        dirt = ["%%add", " ", ":", "!", "\""]
+        msg = str(message.content)
+        for piece in dirt:
+            msg = msg.replace(piece, "")
+        return msg
+
+    async def format_msg_ul(self, message):
+        dirt = ["%%lu", " ", ":", "!", "\""]
         msg = str(message.content)
         for piece in dirt:
             msg = msg.replace(piece, "")

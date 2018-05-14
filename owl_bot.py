@@ -78,6 +78,11 @@ async def on_message(message):
             await extensions.altinator_main(disc_id=disc_id)
             await client.send_file(message.author, extensions.altinator_png_path)
 
+    elif message.content.startswith("%%lu"):
+        disc_id = await utils.format_msg_ul(message)
+        await extensions.altinator_main(disc_id=disc_id)
+        await client.send_file(message.author, extensions.altinator_png_path)
+
 
 async def _run():
     await client.login(token)

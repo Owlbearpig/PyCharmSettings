@@ -102,6 +102,7 @@ class AltLookup(): # looks up stuff for one disc id
         self.x.align["Score"] = "r"
 
     def make_png(self):
+
         x_dim = self.pic_dimensions[0]
         y_dim = self.pic_dimensions[1]
         x_ratio = 5/8.9
@@ -112,7 +113,7 @@ class AltLookup(): # looks up stuff for one disc id
         ax.cla()
         plt.text(0, 0, str(self.x), {'fontsize': 10}, fontproperties='monospace', color = 'white', backgroundcolor = 'black')
         plt.axis('off')
-        plt.tight_layout()
+        #plt.tight_layout()
         save_path = os.path.join(Path(__file__).parents[1], 'output', 'output-{}.png'.format(self.disc_id))
         plt.savefig(save_path, bbox_inches = 'tight')
         return save_path
