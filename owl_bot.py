@@ -9,8 +9,7 @@ import character_groups as char_groups
 
 
 #
-# Owlbot, a Discord bot by Owlbearpig and Inarius, based on discord.py and its command
-#                             extension
+# Owlbot, a Discord bot by Inarius and Owlbearpig, based on discord.py and its command extension
 #
 #
 #

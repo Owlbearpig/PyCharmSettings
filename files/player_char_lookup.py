@@ -97,7 +97,7 @@ class AltLookup(): # looks up stuff for one disc id
 
         self.x.align["Name"] = "l"
         self.x.align["ActiveSpec"] = "l"
-        self.x.align["Cap?"] = "l"
+        self.x.align["Weekly 15 cap"] = "l"
         self.x.align["Highest"] = "l"
         self.x.align["Score"] = "r"
 
