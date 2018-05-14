@@ -3,7 +3,7 @@ from files.variables import Variables
 import json
 
 new_vars = Variables()
-disc_id_dict = new_vars._disc_dict
+#disc_id_dict = new_vars._disc_dict
 
 new_sql_transfer = sql_transfers.MysqlTransfer()
 
@@ -22,10 +22,11 @@ def get_dict_matches(**kwargs):
 
 
 def create_member_links():
+    disc_links = new_sql_transfer.db_get_table("disc_connection")
     mains = []
-    for disc_id in disc_id_dict:
-        mains.append(get_dict_matches(name=disc_id_dict[disc_id][0], realm=disc_id_dict[disc_id][1]))
-        mains[len(mains)-1:len(mains)][0]["disc_id"] = disc_id
+    for disc_user in disc_links:
+        mains.append(get_dict_matches(name=disc_user["name"], realm=disc_user["realm"]))
+        mains[len(mains)-1:len(mains)][0]["disc_id"] = disc_user["disc_id"]
 
     linked_tuples = []
     for _main in mains:

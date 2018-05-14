@@ -8,28 +8,30 @@ import os
 new_variables = variables.Variables()
 
 
-class AltLookup():
+class AltLookup(): # looks up stuff for one disc id
 
     def __init__(self, disc_id = "105605803632762880"):
         self.disc_id = disc_id
+
+        self.id_is_present = True
+
         self.new_variables = variables.Variables()
-        mysql_transfer = sql_transfers.MysqlTransfer()
-        self.io_requests = asyncrequests.ParallelRequestsAsync()
+        self.mysql_transfer = sql_transfers.MysqlTransfer()
 
-        self.db_all_chars = json.loads(mysql_transfer.db_get("member_links", "alt_chars", "disc_id={}".format(disc_id))['alt_chars']) # alt chars contains all chars :(
+        if self.is_in_db():
 
-        self.db_dump_main = json.loads(mysql_transfer.db_get("member_links", "main_char", "disc_id={}".format(disc_id))['main_char'])
+            self.io_requests = asyncrequests.ParallelRequestsAsync()
 
-        self.db_dump_disc_connections = json.loads(mysql_transfer.db_get("disc_connection", "name", "disc_id={}".format(disc_id))['main_char'])
+            self.db_all_chars = json.loads(self.mysql_transfer.db_get("member_links", "alt_chars", "disc_id={}".format(disc_id))['alt_chars']) # alt chars contains all chars :(
 
-        self.pic_dimensions = (0,0)
+            self.db_dump_main = json.loads(self.mysql_transfer.db_get("member_links", "main_char", "disc_id={}".format(disc_id))['main_char'])
 
-    def id_check(self):
-        disc_id = self.disc_id
+            self.pic_dimensions = (0,0)
+        else:
+            self.id_is_present = False
 
-
-
-        return
+    def is_in_db(self):
+        return None != self.mysql_transfer.db_get("disc_connection", "name", "disc_id={}".format(self.disc_id))
 
     def url_list_generator(self, char_list, field="mythic_plus_weekly_highest_level_runs"):
         url_list = []

@@ -44,6 +44,7 @@ class MysqlTransfer():
             try:
                 cursor.execute(sql_cmd, list(kwargs.values()))
             except Exception as e:
+                print("last executed:", cursor._last_executed)
                 print(e)
             if single_store:
                 self.connection.commit()
@@ -55,8 +56,9 @@ class MysqlTransfer():
             try:
                 cursor.execute(sql.format(str(column), str(table), str(sql_cond)))
                 res = cursor.fetchone()
-            except:
-                pass
+            except Exception as e:
+                print("last executed:", cursor._last_executed)
+                print(e)
         return res
 
     def db_get_table(self, table):

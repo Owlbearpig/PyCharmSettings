@@ -2,13 +2,15 @@ import asyncio
 import csv
 import json
 from files import dungeonator_standalone, player_char_lookup
-
-
+import os.path
+from pathlib import Path
+from files import asyncrequests
+from files import sql_transfers
 
 class BotExtensionFunctions():
     def __init__(self, loop = None):
         self.loop = loop
-        self.altinator_png_path = None
+        self.altinator_png_path = os.path.join(Path(__file__).parents[1], 'files', 'placeholder.jpg')
 
     @asyncio.coroutine
     async def dungeonator_main(self):
@@ -52,27 +54,63 @@ class BotExtensionFunctions():
 
 
     @asyncio.coroutine
-    async def altinator_main(self, disc_id="105605803632762880"):
+    async def lookup_routine(self, alt_lookup):
+        new_lookup = alt_lookup
 
-        lookup = player_char_lookup.AltLookup(disc_id=disc_id)
+        db_all_chars_temp = new_lookup.db_all_chars
+        db_all_chars_temp.remove(new_lookup.db_dump_main)
 
-        db_all_chars_temp = lookup.db_all_chars
-        db_all_chars_temp.remove(lookup.db_dump_main)
+        url_alts = new_lookup.url_list_generator(db_all_chars_temp)
+        url_main = new_lookup.url_list_generator(new_lookup.db_dump_main)
 
-        url_alts = lookup.url_list_generator(db_all_chars_temp)
-        url_main = lookup.url_list_generator(lookup.db_dump_main)
-
-        res_alts = await lookup.io_requests.get_responses(url_alts)
-        res_main = await lookup.io_requests.get_responses(url_main)
+        res_alts = await new_lookup.io_requests.get_responses(url_alts)
+        res_main = await new_lookup.io_requests.get_responses(url_main)
 
         alt_char_responses = [json.loads(char.decode("utf-8")) for char in res_alts]
         main_char_response = [json.loads(char.decode("utf-8")) for char in res_main]
 
         formatted_responses = []
         for io_response_char in main_char_response + alt_char_responses:
-            formatted_responses.append(lookup.format_response_alt_lookup(io_response=io_response_char))
-        lookup.spreadsheet(formatted_responses)
+            formatted_responses.append(new_lookup.format_response_alt_lookup(io_response=io_response_char))
+        new_lookup.spreadsheet(formatted_responses)
 
-        self.altinator_png_path = lookup.make_png()
+        self.altinator_png_path = new_lookup.make_png()
         print(self.altinator_png_path)
+
+    @asyncio.coroutine
+    async def add_disc_user(self, new_char, disc_id):
+        def is_connected(new_char):
+            res = False
+            current_links = sql.db_get_table('disc_connection')
+            for connection in current_links:
+                if connection["name"].lower() == new_char.lower():
+                    res = True
+            return res
+
+        sql = sql_transfers.MysqlTransfer()
+        members = sql.db_get_table('all_members')
+        if is_connected(new_char=new_char):
+            return 2 # already in db ...
+
+        for member in members:
+            print(new_char.lower(), member["name"].lower())
+            if new_char.lower() == member["name"].lower():
+                sql.versatile_db_store(**{"disc_id" : disc_id, "name": member["name"], "realm": member["realm"]}, table="disc_connection")
+                return None # success
+
+        return 1 # probably couldn't be found in guild db
+
+
+
+    @asyncio.coroutine
+    async def altinator_main(self, disc_id="105605803632762880"):
+
+        res = False
+        new_lookup = player_char_lookup.AltLookup(disc_id=disc_id)
+
+        if new_lookup.id_is_present:
+            res = True
+            await self.lookup_routine(new_lookup)
+        return res
+
 

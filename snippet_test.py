@@ -13,10 +13,12 @@ import requests
 import urllib
 import os
 from pathlib import Path
+import time
+import datetime
 
+sql = sql_transfers.MysqlTransfer()
+#members = sql.db_get_table('all_members')
+current_links = sql.db_get_table('disc_connection')
 
-new_vars = variables.Variables()
+print(current_links)
 
-a = new_vars.get_mysql_login()
-
-print(a[0])
