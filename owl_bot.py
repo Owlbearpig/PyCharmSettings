@@ -60,8 +60,9 @@ async def on_message(message):
         if not is_present_in_db:
             await client.send_message(message.author, "User not in the db :(")
             await client.send_message(message.author, "But you can add yourself by replying with \"%%add:\"one of your chars\" :D ")
-            await client.send_message(message.author, "(case-insensitive, doesn't matter which of your chars and you only have to do it once. Takes a few mins to add+update) Example:")
-            await client.send_message(message.author, "\"%%add owlbearpig\"")
+            await client.send_message(message.author, "(case-insensitive, doesn't matter which of your chars and you only have to do it once. Takes a few mins to add+update) ")
+            await client.send_message(message.author, "Please don't spam it after you've added a character. It takes a few secs. (Randy) Example:")
+            await client.send_message(message.author, "%%add owlbearpig")
 
     elif message.content.startswith("%%add"):
         disc_id = await utils.get_user_id(message=message)

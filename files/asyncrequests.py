@@ -16,7 +16,7 @@ class ParallelRequests():
 
     async def fetch(self, url, session):
         retries = 10
-        print(URL(url, encoded=False))
+        #print(URL(url, encoded=False))
         try:
             response = await session.get(URL(url, encoded=False))
             for retry in range(retries):

@@ -23,21 +23,23 @@ def get_dict_matches(**kwargs):
 
 def create_member_links():
     disc_links = new_sql_transfer.db_get_table("disc_connection")
-    mains = []
-    for disc_user in disc_links:
-        mains.append(get_dict_matches(name=disc_user["name"], realm=disc_user["realm"]))
-        mains[len(mains)-1:len(mains)][0]["disc_id"] = disc_user["disc_id"]
+    if disc_links != None:
+        mains = []
+        for disc_user in disc_links:
+            mains.append(get_dict_matches(name=disc_user["name"], realm=disc_user["realm"]))
+            mains[len(mains)-1:len(mains)][0]["disc_id"] = disc_user["disc_id"]
 
-    linked_tuples = []
-    for _main in mains:
-        linked_tuples.append((_main, get_dict_matches(achieve_id=_main["achieve_id"])))
+        linked_tuples = []
+        for _main in mains:
+            linked_tuples.append((_main, get_dict_matches(achieve_id=_main["achieve_id"])))
 
-    for link in linked_tuples:
-        _main = json.dumps(link[0])
-        _alts = json.dumps(link[1])
-        data = {"main_char" : _main, "alt_chars" : _alts, "disc_id" : link[0]["disc_id"]}
-        new_sql_transfer.versatile_db_store(**data, single_store=False, table="member_links")
-
+        for link in linked_tuples:
+            _main = json.dumps(link[0])
+            _alts = json.dumps(link[1])
+            data = {"main_char" : _main, "alt_chars" : _alts, "disc_id" : link[0]["disc_id"]}
+            new_sql_transfer.versatile_db_store(**data, single_store=False, table="member_links")
+    else:
+        print("fetching db table failed..")
     new_sql_transfer.connection.commit()
 
 create_member_links()
