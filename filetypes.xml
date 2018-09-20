@@ -5,6 +5,7 @@
       <mapping ext="csv" type="HTML" />
       <mapping ext="toc" type="Lua" />
       <mapping pattern="wa" type="PLAIN_TEXT" />
+      <mapping pattern="start" type="PLAIN_TEXT" />
       <mapping pattern="login_info" type="PLAIN_TEXT" />
       <mapping pattern="1" type="Python" />
     </extensionMap>
