@@ -7,6 +7,7 @@
       <mapping pattern="wa" type="PLAIN_TEXT" />
       <mapping pattern="start" type="PLAIN_TEXT" />
       <mapping pattern="login_info" type="PLAIN_TEXT" />
+      <mapping pattern="bkup_oninit" type="PLAIN_TEXT" />
       <mapping pattern="1" type="Python" />
     </extensionMap>
   </component>
