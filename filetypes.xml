@@ -3,6 +3,7 @@
     <ignoreFiles list="*$py.class;*.hprof;*.pyc;*.pyo;*.rbc;*.xml;*.yarb;*~;.DS_Store;.git;.gitattributes;.hg;.svn;CVS;__pycache__;_svn;_windows;codestyles;vssver.scc;vssver2.scc;" />
     <extensionMap>
       <mapping ext="csv" type="HTML" />
+      <mapping pattern="p2p maxima" type="PLAIN_TEXT" />
       <mapping pattern="wa" type="PLAIN_TEXT" />
       <mapping pattern="notes" type="PLAIN_TEXT" />
       <mapping pattern="login_info" type="PLAIN_TEXT" />
