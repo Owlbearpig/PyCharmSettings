@@ -3,14 +3,20 @@
     <ignoreFiles list="*$py.class;*.hprof;*.pyc;*.pyo;*.rbc;*.xml;*.yarb;*~;.DS_Store;.git;.gitattributes;.hg;.svn;CVS;__pycache__;_svn;_windows;codestyles;vssver.scc;vssver2.scc;" />
     <extensionMap>
       <mapping ext="csv" type="HTML" />
-      <mapping ext="toc" type="Lua" />
+      <mapping pattern="compare jones matrix entries for optimization" type="PLAIN_TEXT" />
+      <mapping pattern="!Masson erf - phase optimize - no absorp" type="PLAIN_TEXT" />
+      <mapping pattern="bkup_oninit" type="PLAIN_TEXT" />
+      <mapping pattern="Masson erf - phase optimize - no absorp" type="PLAIN_TEXT" />
       <mapping pattern="wa" type="PLAIN_TEXT" />
       <mapping pattern="notes" type="PLAIN_TEXT" />
-      <mapping pattern="login_info" type="PLAIN_TEXT" />
-      <mapping pattern="bkup_oninit" type="PLAIN_TEXT" />
       <mapping pattern="start" type="PLAIN_TEXT" />
+      <mapping pattern="login_info" type="PLAIN_TEXT" />
+      <mapping pattern="6 wp" type="PLAIN_TEXT" />
+      <mapping pattern="p2p maxima" type="PLAIN_TEXT" />
+      <mapping ext="pyd" type="PLAIN_TEXT" />
       <mapping pattern="update_all_members_cron_tab_file" type="Python" />
       <mapping pattern="1" type="Python" />
+      <mapping ext="toc" type="Lua" />
     </extensionMap>
   </component>
 </application>
