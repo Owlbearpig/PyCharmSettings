@@ -4,20 +4,18 @@
     <extensionMap>
       <mapping pattern="*.js.flow" type="Flow" />
       <mapping pattern="*.js.flow" type="Flow" />
-      <mapping ext="csv" type="HTML" />
       <mapping pattern="Masson erf - phase optimize - no absorp" type="PLAIN_TEXT" />
-      <mapping pattern="compare jones matrix entries for optimization" type="PLAIN_TEXT" />
       <mapping pattern="Description" type="PLAIN_TEXT" />
       <mapping pattern="login_info" type="PLAIN_TEXT" />
       <mapping pattern="!Masson erf - phase optimize - no absorp" type="PLAIN_TEXT" />
-      <mapping pattern="bkup_oninit" type="PLAIN_TEXT" />
       <mapping pattern="6 wp" type="PLAIN_TEXT" />
+      <mapping pattern="bkup_oninit" type="PLAIN_TEXT" />
       <mapping pattern="notes" type="PLAIN_TEXT" />
       <mapping pattern="p2p maxima" type="PLAIN_TEXT" />
+      <mapping pattern="compare jones matrix entries for optimization" type="PLAIN_TEXT" />
       <mapping pattern="wa" type="PLAIN_TEXT" />
       <mapping pattern="start" type="PLAIN_TEXT" />
       <mapping ext="pyd" type="PLAIN_TEXT" />
-      <removed_mapping ext="csv" type="PLAIN_TEXT" />
       <mapping pattern="update_all_members_cron_tab_file" type="Python" />
       <mapping pattern="1" type="Python" />
       <mapping ext="toc" type="Lua" />
