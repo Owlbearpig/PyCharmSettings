@@ -6,13 +6,13 @@
       <mapping pattern="*.js.flow" type="Flow" />
       <mapping pattern="*.js.flow" type="Flow" />
       <mapping pattern="doesnt work" type="PLAIN_TEXT" />
-      <mapping pattern="contents" type="PLAIN_TEXT" />
       <mapping pattern="note" type="PLAIN_TEXT" />
       <mapping pattern="!Masson erf - phase optimize - no absorp" type="PLAIN_TEXT" />
       <mapping pattern="description" type="PLAIN_TEXT" />
       <mapping pattern="2d_plot_data" type="PLAIN_TEXT" />
       <mapping pattern="descriptin" type="PLAIN_TEXT" />
       <mapping pattern="uni_run3_30-09-2019" type="PLAIN_TEXT" />
+      <mapping pattern="contents" type="PLAIN_TEXT" />
       <mapping pattern="main" type="Python" />
     </extensionMap>
   </component>
