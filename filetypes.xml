@@ -2,14 +2,12 @@
   <component name="FileTypeManager" version="17">
     <ignoreFiles list="*$py.class;*.hprof;*.pyc;*.pyo;*.rbc;*.xml;*.yarb;*~;.DS_Store;.git;.gitattributes;.hg;.svn;CVS;__pycache__;_svn;_windows;codestyles;vssver.scc;vssver2.scc;" />
     <extensionMap>
-      <mapping pattern="*.js.flow" type="Flow" />
-      <mapping pattern="*.js.flow" type="Flow" />
+      <mapping pattern="6 wp" type="PLAIN_TEXT" />
       <mapping pattern="Masson erf - phase optimize - no absorp" type="PLAIN_TEXT" />
+      <mapping pattern="bkup_oninit" type="PLAIN_TEXT" />
       <mapping pattern="Description" type="PLAIN_TEXT" />
       <mapping pattern="login_info" type="PLAIN_TEXT" />
       <mapping pattern="!Masson erf - phase optimize - no absorp" type="PLAIN_TEXT" />
-      <mapping pattern="6 wp" type="PLAIN_TEXT" />
-      <mapping pattern="bkup_oninit" type="PLAIN_TEXT" />
       <mapping pattern="notes" type="PLAIN_TEXT" />
       <mapping pattern="p2p maxima" type="PLAIN_TEXT" />
       <mapping pattern="compare jones matrix entries for optimization" type="PLAIN_TEXT" />
