@@ -8,6 +8,6 @@
     <option name="FONT_FAMILY" value="Monospaced" />
   </component>
   <component name="EditorSettings">
-    <option name="USE_SOFT_WRAPS" value="" />
+    <option name="USE_SOFT_WRAPS" value="PREVIEW" />
   </component>
 </application>
