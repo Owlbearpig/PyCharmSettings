@@ -3,6 +3,7 @@
     <ignoreFiles list="*$py.class;*.hprof;*.pyc;*.pyo;*.rbc;*.yarb;*~;.DS_Store;.git;.hg;.svn;CVS;__pycache__;_svn;vssver.scc;vssver2.scc;" />
     <extensionMap>
       <mapping pattern="default_settings" type="JSON5" />
+      <mapping pattern="notepad" type="PLAIN_TEXT" />
       <mapping pattern="!Masson erf - phase optimize - no absorp" type="PLAIN_TEXT" />
       <mapping pattern="note" type="PLAIN_TEXT" />
       <mapping pattern="notes" type="PLAIN_TEXT" />
@@ -12,6 +13,7 @@
       <mapping pattern="doesnt work" type="PLAIN_TEXT" />
       <mapping pattern="contents" type="PLAIN_TEXT" />
       <mapping pattern="descriptin" type="PLAIN_TEXT" />
+      <mapping pattern="ntepad" type="PLAIN_TEXT" />
       <mapping pattern="main" type="Python" />
     </extensionMap>
   </component>
