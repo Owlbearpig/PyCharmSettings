@@ -9,6 +9,7 @@
       <mapping pattern="6 wp" type="PLAIN_TEXT" />
       <mapping pattern="login_info" type="PLAIN_TEXT" />
       <mapping pattern="notes" type="PLAIN_TEXT" />
+      <mapping pattern="speedtestnotes" type="PLAIN_TEXT" />
       <mapping pattern="Masson erf - phase optimize - no absorp" type="PLAIN_TEXT" />
       <mapping pattern="p2p maxima" type="PLAIN_TEXT" />
       <mapping pattern="bkup_oninit" type="PLAIN_TEXT" />
