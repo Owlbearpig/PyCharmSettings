@@ -1,1 +1,1 @@
-# DiscBot
+# IDE Settings
