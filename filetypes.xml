@@ -1,5 +1,25 @@
 <application>
   <component name="FileTypeManager" version="17">
-    <ignoreFiles list="*$py.class;*.hprof;*.pyc;*.pyo;*.rbc;*.yarb;*~;.DS_Store;.git;.hg;.svn;CVS;__pycache__;_svn;vssver.scc;vssver2.scc;" />
+    <ignoreFiles list="*$py.class;*.hprof;*.pyc;*.pyo;*.rbc;*.xml;*.yarb;*~;.DS_Store;.git;.gitattributes;.hg;.svn;CVS;__pycache__;_svn;_windows;codestyles;vssver.scc;vssver2.scc;" />
+    <extensionMap>
+      <mapping pattern="!Masson erf - phase optimize - no absorp" type="PLAIN_TEXT" />
+      <mapping pattern="start" type="PLAIN_TEXT" />
+      <mapping pattern="Description" type="PLAIN_TEXT" />
+      <mapping pattern="compare jones matrix entries for optimization" type="PLAIN_TEXT" />
+      <mapping pattern="6 wp" type="PLAIN_TEXT" />
+      <mapping pattern="login_info" type="PLAIN_TEXT" />
+      <mapping pattern="notes" type="PLAIN_TEXT" />
+      <mapping pattern="speedtestnotes" type="PLAIN_TEXT" />
+      <mapping pattern="Masson erf - phase optimize - no absorp" type="PLAIN_TEXT" />
+      <mapping pattern="p2p maxima" type="PLAIN_TEXT" />
+      <mapping pattern="bkup_oninit" type="PLAIN_TEXT" />
+      <mapping pattern="wa" type="PLAIN_TEXT" />
+      <mapping pattern="todos" type="PLAIN_TEXT" />
+      <mapping pattern="wp1" type="PLAIN_TEXT" />
+      <mapping ext="pyd" type="PLAIN_TEXT" />
+      <mapping pattern="1" type="Python" />
+      <mapping pattern="update_all_members_cron_tab_file" type="Python" />
+      <mapping ext="toc" type="Lua" />
+    </extensionMap>
   </component>
 </application>
