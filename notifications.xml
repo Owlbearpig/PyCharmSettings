@@ -1,5 +1,0 @@
-<application>
-  <component name="NotificationConfiguration" showBalloons="false">
-    <notification groupId="IDE Usage Statistics" displayType="STICKY_BALLOON" />
-  </component>
-</application>
