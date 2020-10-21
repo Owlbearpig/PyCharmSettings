@@ -16,6 +16,7 @@
       <mapping pattern="wa" type="PLAIN_TEXT" />
       <mapping pattern="todos" type="PLAIN_TEXT" />
       <mapping pattern="wp1" type="PLAIN_TEXT" />
+      <mapping ext="npy" type="PLAIN_TEXT" />
       <mapping ext="pyd" type="PLAIN_TEXT" />
       <mapping pattern="1" type="Python" />
       <mapping pattern="update_all_members_cron_tab_file" type="Python" />
