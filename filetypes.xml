@@ -7,6 +7,7 @@
       <mapping pattern="n20_7" type="AUTO_DETECTED" />
       <mapping pattern="n25_1" type="AUTO_DETECTED" />
       <mapping pattern="n25_2" type="AUTO_DETECTED" />
+      <mapping pattern="n40_1" type="AUTO_DETECTED" />
       <mapping pattern="!Masson erf - phase optimize - no absorp" type="PLAIN_TEXT" />
       <mapping pattern="start" type="PLAIN_TEXT" />
       <mapping pattern="Description" type="PLAIN_TEXT" />
