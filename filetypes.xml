@@ -5,10 +5,11 @@
       <mapping pattern="hwp_2500its_state_opt_v1_1" type="AUTO_DETECTED" />
       <mapping pattern="n30_1" type="AUTO_DETECTED" />
       <mapping pattern="qwp_2500its" type="AUTO_DETECTED" />
-      <mapping pattern="hwp_2500its_0" type="AUTO_DETECTED" />
       <mapping pattern="qwp_2500its_q_opt_0" type="AUTO_DETECTED" />
+      <mapping pattern="hwp_2500its_0" type="AUTO_DETECTED" />
       <mapping pattern="n25_3" type="AUTO_DETECTED" />
       <mapping pattern="n20_7" type="AUTO_DETECTED" />
+      <mapping pattern="opt_out_02_15_n6" type="AUTO_DETECTED" />
       <mapping pattern="n25_1" type="AUTO_DETECTED" />
       <mapping pattern="hwp_2500its_masson_ret_0" type="AUTO_DETECTED" />
       <mapping pattern="n25_2" type="AUTO_DETECTED" />
@@ -28,8 +29,8 @@
       <mapping pattern="speedtestnotes" type="PLAIN_TEXT" />
       <mapping pattern="Masson erf - phase optimize - no absorp" type="PLAIN_TEXT" />
       <mapping pattern="p2p maxima" type="PLAIN_TEXT" />
-      <mapping pattern="f2npy" type="PLAIN_TEXT" />
       <mapping pattern="f2" type="PLAIN_TEXT" />
+      <mapping pattern="f2npy" type="PLAIN_TEXT" />
       <mapping pattern="bkup_oninit" type="PLAIN_TEXT" />
       <mapping pattern="wa" type="PLAIN_TEXT" />
       <mapping pattern="todos" type="PLAIN_TEXT" />
