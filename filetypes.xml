@@ -1,42 +1,42 @@
 <application>
   <component name="FileTypeManager" version="18">
-    <ignoreFiles list="*$py.class;*.pyc;*.pyo;*.rbc;*.xml;*.yarb;*~;.DS_Store;.git;.gitattributes;.hg;.svn;CVS;__pycache__;_svn;_windows;codestyles;vssver.scc;vssver2.scc;" />
+    <ignoreFiles list="*$py.class;*.pyc;*.pyo;*.rbc;*.xml;*.yarb;*~;.DS_Store;.git;.gitattributes;.hg;.svn;CVS;__pycache__;_svn;_windows;codestyles;vssver.scc;vssver2.scc" />
     <extensionMap>
-      <mapping pattern="hwp_2500its_0" type="AUTO_DETECTED" />
-      <mapping pattern="n20_7" type="AUTO_DETECTED" />
-      <mapping pattern="opt_out_02_15_n6" type="AUTO_DETECTED" />
-      <mapping pattern="hwp_2500its_masson_ret_0" type="AUTO_DETECTED" />
+      <mapping pattern="n25_3" type="AUTO_DETECTED" />
       <mapping pattern="n25_2" type="AUTO_DETECTED" />
-      <mapping pattern="qwp_2500its_0" type="AUTO_DETECTED" />
-      <mapping pattern="qwp_2500its_2" type="AUTO_DETECTED" />
       <mapping pattern="layer_change" type="AUTO_DETECTED" />
-      <mapping pattern="hwp_2500its_int_opt_1" type="AUTO_DETECTED" />
-      <mapping pattern="n5_10_15_20" type="AUTO_DETECTED" />
-      <mapping pattern="n40_1" type="AUTO_DETECTED" />
-      <mapping pattern="hwp_2500its_state_opt_v1_1" type="AUTO_DETECTED" />
+      <mapping pattern="qwp_2500its_1" type="AUTO_DETECTED" />
+      <mapping pattern="qwp_2500its_2" type="AUTO_DETECTED" />
+      <mapping pattern="n25_1" type="AUTO_DETECTED" />
+      <mapping pattern="qwp_2500its_0" type="AUTO_DETECTED" />
+      <mapping pattern="hwp_2500its_0" type="AUTO_DETECTED" />
       <mapping pattern="n30_1" type="AUTO_DETECTED" />
       <mapping pattern="qwp_2500its" type="AUTO_DETECTED" />
+      <mapping pattern="hwp_2500its_masson_ret_0" type="AUTO_DETECTED" />
       <mapping pattern="qwp_2500its_q_opt_0" type="AUTO_DETECTED" />
-      <mapping pattern="n25_3" type="AUTO_DETECTED" />
+      <mapping pattern="hwp_2500its_int_opt_1" type="AUTO_DETECTED" />
+      <mapping pattern="n40_1" type="AUTO_DETECTED" />
+      <mapping pattern="n20_7" type="AUTO_DETECTED" />
+      <mapping pattern="opt_out_02_15_n6" type="AUTO_DETECTED" />
+      <mapping pattern="n5_10_15_20" type="AUTO_DETECTED" />
       <mapping pattern="abe" type="AUTO_DETECTED" />
-      <mapping pattern="n25_1" type="AUTO_DETECTED" />
-      <mapping pattern="qwp_2500its_1" type="AUTO_DETECTED" />
-      <mapping pattern="start" type="PLAIN_TEXT" />
-      <mapping pattern="Description" type="PLAIN_TEXT" />
-      <mapping pattern="compare jones matrix entries for optimization" type="PLAIN_TEXT" />
-      <mapping pattern="6 wp" type="PLAIN_TEXT" />
+      <mapping pattern="hwp_2500its_state_opt_v1_1" type="AUTO_DETECTED" />
       <mapping pattern="notes" type="PLAIN_TEXT" />
+      <mapping pattern="f2" type="PLAIN_TEXT" />
+      <mapping pattern="p2p maxima" type="PLAIN_TEXT" />
+      <mapping pattern="login_info" type="PLAIN_TEXT" />
+      <mapping pattern="6 wp" type="PLAIN_TEXT" />
+      <mapping pattern="Masson erf - phase optimize - no absorp" type="PLAIN_TEXT" />
+      <mapping pattern="!Masson erf - phase optimize - no absorp" type="PLAIN_TEXT" />
+      <mapping pattern="Description" type="PLAIN_TEXT" />
       <mapping pattern="bkup_oninit" type="PLAIN_TEXT" />
       <mapping pattern="wa" type="PLAIN_TEXT" />
-      <mapping pattern="todos" type="PLAIN_TEXT" />
-      <mapping pattern="!Masson erf - phase optimize - no absorp" type="PLAIN_TEXT" />
-      <mapping pattern="login_info" type="PLAIN_TEXT" />
-      <mapping pattern="speedtestnotes" type="PLAIN_TEXT" />
-      <mapping pattern="Masson erf - phase optimize - no absorp" type="PLAIN_TEXT" />
-      <mapping pattern="p2p maxima" type="PLAIN_TEXT" />
-      <mapping pattern="f2" type="PLAIN_TEXT" />
       <mapping pattern="f2npy" type="PLAIN_TEXT" />
+      <mapping pattern="compare jones matrix entries for optimization" type="PLAIN_TEXT" />
+      <mapping pattern="speedtestnotes" type="PLAIN_TEXT" />
+      <mapping pattern="start" type="PLAIN_TEXT" />
       <mapping pattern="wp1" type="PLAIN_TEXT" />
+      <mapping pattern="todos" type="PLAIN_TEXT" />
       <mapping ext="npy" type="PLAIN_TEXT" />
       <mapping ext="pyd" type="PLAIN_TEXT" />
       <mapping pattern="1" type="Python" />
