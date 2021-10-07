@@ -21,6 +21,7 @@
       <mapping pattern="n5_10_15_20" type="AUTO_DETECTED" />
       <mapping pattern="abe" type="AUTO_DETECTED" />
       <mapping pattern="hwp_2500its_state_opt_v1_1" type="AUTO_DETECTED" />
+      <mapping pattern="image_data" type="AUTO_DETECTED" />
       <mapping pattern="notes" type="PLAIN_TEXT" />
       <mapping pattern="f2" type="PLAIN_TEXT" />
       <mapping pattern="p2p maxima" type="PLAIN_TEXT" />
