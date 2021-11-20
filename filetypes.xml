@@ -11,6 +11,7 @@
       <mapping pattern="qwp_2500its_0" type="AUTO_DETECTED" />
       <mapping pattern="hwp_2500its_0" type="AUTO_DETECTED" />
       <mapping pattern="n30_1" type="AUTO_DETECTED" />
+      <mapping pattern="optimization_algo_simple" type="AUTO_DETECTED" />
       <mapping pattern="qwp_2500its" type="AUTO_DETECTED" />
       <mapping pattern="hwp_2500its_masson_ret_0" type="AUTO_DETECTED" />
       <mapping pattern="qwp_2500its_q_opt_0" type="AUTO_DETECTED" />
@@ -23,6 +24,7 @@
       <mapping pattern="abe" type="AUTO_DETECTED" />
       <mapping pattern="hwp_2500its_state_opt_v1_1" type="AUTO_DETECTED" />
       <mapping pattern="image_data" type="AUTO_DETECTED" />
+      <mapping pattern="simple_optimization" type="AUTO_DETECTED" />
       <mapping pattern="notes" type="PLAIN_TEXT" />
       <mapping pattern="f2" type="PLAIN_TEXT" />
       <mapping pattern="p2p maxima" type="PLAIN_TEXT" />
