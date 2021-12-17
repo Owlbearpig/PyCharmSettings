@@ -23,6 +23,7 @@
       <mapping pattern="move" type="AUTO_DETECTED" />
       <mapping pattern="abe" type="AUTO_DETECTED" />
       <mapping pattern="hwp_2500its_state_opt_v1_1" type="AUTO_DETECTED" />
+      <mapping pattern="j" type="AUTO_DETECTED" />
       <mapping pattern="image_data" type="AUTO_DETECTED" />
       <mapping pattern="simple_optimization" type="AUTO_DETECTED" />
       <mapping pattern="notes" type="PLAIN_TEXT" />
