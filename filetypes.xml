@@ -9,6 +9,7 @@
       <mapping pattern="qwp_2500its_2" type="AUTO_DETECTED" />
       <mapping pattern="n25_1" type="AUTO_DETECTED" />
       <mapping pattern="qwp_2500its_0" type="AUTO_DETECTED" />
+      <mapping pattern="taipan_PIstage" type="AUTO_DETECTED" />
       <mapping pattern="hwp_2500its_0" type="AUTO_DETECTED" />
       <mapping pattern="n30_1" type="AUTO_DETECTED" />
       <mapping pattern="optimization_algo_simple" type="AUTO_DETECTED" />
