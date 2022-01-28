@@ -4,7 +4,7 @@
     <option name="INDENT_TO_CARET_ON_PASTE" value="true" />
   </component>
   <component name="EditorSettings">
-    <option name="USE_SOFT_WRAPS" value="CONSOLE:PREVIEW" />
+    <option name="USE_SOFT_WRAPS" value="PREVIEW" />
   </component>
   <component name="TodoConfiguration">
     <pattern pattern="\btodo\b.*" />
