@@ -17,6 +17,7 @@
       <mapping pattern="hwp_2500its_masson_ret_0" type="AUTO_DETECTED" />
       <mapping pattern="qwp_2500its_q_opt_0" type="AUTO_DETECTED" />
       <mapping pattern="hwp_2500its_int_opt_1" type="AUTO_DETECTED" />
+      <mapping pattern="matlab_example_problem" type="AUTO_DETECTED" />
       <mapping pattern="n40_1" type="AUTO_DETECTED" />
       <mapping pattern="n20_7" type="AUTO_DETECTED" />
       <mapping pattern="opt_out_02_15_n6" type="AUTO_DETECTED" />
