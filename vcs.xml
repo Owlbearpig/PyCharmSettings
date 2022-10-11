@@ -14,6 +14,10 @@
           <option name="url" value="https://github.com/Owlbearpig/taipan.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="http://gitlab.uni-marburg.de" />
+          <option name="userName" value="jaeckel7" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="E:\CURPROJECT" />
